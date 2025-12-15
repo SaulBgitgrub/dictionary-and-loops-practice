@@ -39,14 +39,43 @@
     #     What would students[0]['Email'][1] return?
 
     #     Why does students[0]['Email'][0] use two sets of brackets?
-import student_data
+import student_data#This line
+#Imports the data from the student.py file
 
 # print(student_data.students)
 students = student_data.students
-print(len(students))
-print(students[0]['Combo,Name'])
-print(students[0]['Email'][0])
-print(students[0]['Email'][1])
+# print(len(students)) # What is being counted
+# print(students[0]['Combo,Name'])
+# print(students[0]['Email'][0])
+# print(students[0]['Email'][1])
+# print(students[1]["Combo,Name"][1])
+# print("_"*25)
+# for student in students:
+#     print(students[0]['Combo,Name'])
+#     print(students[0]['Email'][0])
+#     print(student["Email"][1])
+# print("_"*25)
+# for student in students:
+#     print(students[0]['CPSID'])
+# print("_"*25)
+# #Print grade level and homeroom
+# for student in students:
+#         print(students[0]['GL'])
+#         print(students[0]['HR'])
+# print("_"*25)
+# #reduce lunch now
+# #student["LunchStatus"] = "Reduced"
+# print(student("LunchStatus"))
+# student.update({"LunchStatus": "Reduced"})
+# print(student["LunchStatus"])
+
+# print("_"*25)
+
+# #If Student lunch is greater than or equal to 10, give them off campus lunch
+
+# if student["GL"] >= 10:
+#      print("Off campus lunch")
+# print("_"*25)
 
 # What is being counted?
 
@@ -68,11 +97,11 @@ print(students[0]['Email'][1])
 #and printing the name and email of the students
 #we are also printing a line of underscores to separate the students
 #we are also printing a line of underscores to separate the students
-for student in students:
-    print(student['Combo,Name'])
-    print(student['Email'][0])
-    print(student['Email'][1])
-    print("_"*25)
+# for student in students:
+#     print(student['Combo,Name'])
+#     print(student['Email'][0])
+#     print(student['Email'][1])
+#     print("_"*25)
 
 # What does the loop variable student represent on each pass?
 
@@ -92,6 +121,11 @@ name = input("what is you name?")
 for student in students:
     if name == student['Combo,Name']:
         print(student['Combo,Name'])
+        print("this works")
+jame = input("what is you ID?") 
+for student in students:
+    if jame == student['CPSID']:
+        print(student['CPSID'])
         print("this works")
 
 # What is the goal of this search?
